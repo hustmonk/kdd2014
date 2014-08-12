@@ -11,7 +11,7 @@ __revision__ = '0.1'
 class Project:
     def __init__(self):
         self.type_dict = {}
-        for line in open("../data/type.dict"):
+        for line in open("type.dict"):
             if line[0] == '#':
                 continue
             arr = line.strip().split("\t")

@@ -4,6 +4,7 @@ if [ $# -ne 2 ]; then
     exit
 fi
 
+#vw path
 vw=~/local/vowpal_wabbit-7.6/vowpalwabbit/vw
 workspace="../"$1"/"
 
