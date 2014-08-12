@@ -18,6 +18,7 @@ def find(idx_num, v, start, end):
     else:
         return find(idx_num, v, mid + 1, end)
 
+#change float value to category
 def idf(arr):
     N = 50
     vset = set(arr)
@@ -96,7 +97,3 @@ def labelToY(arr):
             total += 1
     return total
 
-
-if __name__ == '__main__':
-    p = range(1,200)
-    idf("p",p)
