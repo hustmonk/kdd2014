@@ -1,5 +1,5 @@
 set -e
-python type.py >type.dict
+#python type.py >type.dict
 function run() {
     cd ../shell
     mkdir -p ../$1
@@ -7,14 +7,14 @@ function run() {
     #cd ../vw_shell/
     #sh run_model.sh $1 debug
 }
-run essay
-run given
-run resource
-run project
-run user
+#run essay
+#run given
+#run resource
+#run project
+#run user
 
 mkdir -p ../result_data
-python multi.py
+#python multi.py
 
 cd ../vw_shell/
-sh run_model.sh rusult_data train
+sh run_model.sh result_data train

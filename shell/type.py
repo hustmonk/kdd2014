@@ -14,7 +14,7 @@ def is_english(str):
         if ch >= 'A' and ch <= 'Z':
             return True
     return False
-def read_file(filename, projectid):
+def read_file(filename):
     data_dir = '../data/'
     reader = csv.reader(file(data_dir + filename, 'rb'))
     header = reader.next()
@@ -51,4 +51,4 @@ def read_file(filename, projectid):
 
 files = ["essays.csv", "resources.csv", "projects.csv"]
 for filename in files:
-    read_file(filename, projectid)
+    read_file(filename)
